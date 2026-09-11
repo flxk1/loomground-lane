@@ -1,0 +1,46 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 flxk1
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loomground-lane"
+description = "Durable approval envelopes for governed agents: what a grade covers, checked each iteration, appended to the signed audit chain."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSES/Apache-2.0.txt", "LICENSES/CC-BY-4.0.txt"]
+authors = [{ name = "Loomground Contributors" }]
+# Consumed from loomground-governance: vocabulary("grades"), vocabulary("risk"),
+# vocabulary("verdicts"), language_version(). Consumed from loomground-audit-chain:
+# mutation_log.{MutationLog, LogEvent}. Both hard; nothing else.
+dependencies = [
+    "loomground-governance>=0.11,<0.12",
+    "loomground-audit-chain>=0.1,<0.2",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==9.1.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/flxk1/loomground-lane"
+Repository = "https://github.com/flxk1/loomground-lane"
+Issues = "https://github.com/flxk1/loomground-lane/issues"
+
+[tool.setuptools.dynamic]
+version = { attr = "loomground_lane._version.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["loomground_lane*"]
+
+[tool.setuptools.package-data]
+loomground_lane = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
