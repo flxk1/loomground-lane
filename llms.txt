@@ -32,6 +32,6 @@ evaluate_lane(get_lane(folder, "bot", log_root=log), request)
 - symbols from `loomground_governance.vocabulary`; wiring: [docs/seam.md](docs/seam.md)
 
 ## Family
-Runtime controls. Consumes the `loomground-governance` vocabulary and `loomground-audit-chain`. Consumed by hosts, e.g. RVND; optional for every consumer.
+Runtime controls. Consumes the `loomground-governance` vocabulary and `loomground-audit-chain`. Hosts consume it through explicit ports; it is optional for every consumer.
 
 Language: loomground — guide https://github.com/flxk1/loomground/blob/main/llms.txt (the .lg language an agent reads, emits, validates); catalogue https://github.com/flxk1/loomground/blob/main/CATALOGUE.json

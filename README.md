@@ -47,7 +47,7 @@ out: LaneDecision(lane_id='lane-research', allowed=True, violations=())
 
 ## Family
 
-Runtime controls. Consumes the `loomground-governance` vocabulary and `loomground-audit-chain`. Consumed by hosts, e.g. RVND; optional for every consumer.
+Runtime controls. Consumes the `loomground-governance` vocabulary and `loomground-audit-chain`. Hosts consume it through explicit ports; it is optional for every consumer.
 
 ## Status
 
