@@ -7,7 +7,7 @@ A grade says how independently an agent acts; nothing says over what. A durable 
 
 ## Install
 ```
-pip install loomground-lane
+pip install git+https://github.com/flxk1/loomground-lane
 ```
 
 ## Usage

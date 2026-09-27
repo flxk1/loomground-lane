@@ -11,7 +11,7 @@ A grade says how independently an agent acts; nothing says over what. A durable 
 ## Install
 
 ```
-pip install loomground-lane
+pip install git+https://github.com/flxk1/loomground-lane
 ```
 
 ## Usage
@@ -52,6 +52,10 @@ Runtime controls. Consumes the `loomground-governance` vocabulary and `loomgroun
 ## Status
 
 0.1.0 · 47 tests · Python >=3.10 · loomground-governance 0.11 · loomground-audit-chain 0.1
+
+## How this is made
+
+The code and documentation are written with Loomground agents. The maintainer reads and corrects all of it.
 
 ## License
 
