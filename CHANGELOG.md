@@ -2,6 +2,15 @@
 <!-- Copyright 2026 flxk1 -->
 # Changelog
 
+## [0.1.1](https://github.com/flxk1/loomground-lane/compare/loomground-lane-v0.1.0...loomground-lane-v0.1.1) (2026-09-27)
+
+
+### Documentation
+
+* correct stale claims; add How this is made ([103bf74](https://github.com/flxk1/loomground-lane/commit/103bf7424a75ed2949a78618888bd33a46c1ae6b))
+* How this is made names no model vendor ([c2898e4](https://github.com/flxk1/loomground-lane/commit/c2898e4c263555702f2b8809f28fd575f68ba9e5))
+* install from git; add How this is made; align NOTICE ([36fb33f](https://github.com/flxk1/loomground-lane/commit/36fb33fce05548b89c2f763f1e52e142aa89e9a9))
+
 ## 0.1.0
 
 * Published `governance_lane.py` as `loomground_lane.governance_lane`; its capability projection algebra lives in `loomground_lane.lane_capabilities`, with compiled graph, enforcement evaluator, auto-grade threshold, and lane lookup injected as ports. The public host seam is in `docs/seam.md`.
